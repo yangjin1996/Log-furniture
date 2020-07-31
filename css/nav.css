@@ -1,0 +1,79 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style:none;
+}
+.nav{
+	width:1180px;
+	margin:0 auto;
+	height:80px;
+}
+.nav>a{
+	float:left;
+	margin-top:10px;
+	
+}
+.nav>ul{
+	float:right;
+	line-height: 80px;
+}
+.nav>ul>li{
+	width:80px;
+	float:left;
+	margin-left:40px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.nav>ul>li>a{
+	display: block;
+	color:#000;
+	height:78px;
+}
+.nav>ul>li:hover{
+	border-bottom:2px solid #00c905;
+}
+.nav>ul>li:hover a{
+	color:#00c905;
+}
+.nav>ul>li.on{
+	border-bottom:2px solid #00c905;
+	position: relative;
+}
+.nav .on .item{
+	width:80px;
+	height:70px;
+	position: absolute;
+	right:0;
+	bottom:-71px;
+	padding: 8px 0 8px 12px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 10px #d8d8d8;
+	text-align: left;
+	background-color: #fff;
+	opacity: 0;
+}
+.nav .on .item>p{
+	line-height:28px;
+}
+.nav .on .item>p a{
+	font-size: 16px;
+	color:#2f2f2f;
+}
+.nav .on .item>p:hover a{
+	color:#7ae16a
+}
+.nav>ul .on:hover .item{
+	transition: opacity 2s linear;
+	opacity: 1;
+}
+.box>span>a:hover{
+	color:#00c905;
+}
+.box>span.on>a{
+	color:#00c905;
+}

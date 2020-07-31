@@ -1,0 +1,25 @@
+.more{
+	width:180px;
+	height:48px;
+	border:2px solid #a3a3a3;
+	box-sizing: border-box;
+	margin:0 auto;
+	text-align: center;
+	line-height:48px;
+	font-size: 20PX;
+	font-family: "Arial";
+	color:#1d1d1d;
+	margin-top: 90px;
+}
+.more:hover{
+	border:2px solid #2ed700;
+	cursor: pointer;
+}
+.more a{
+	color:#fff;
+	font-size: 20px;
+}
+.more:hover a{
+	display:inline-block;
+	color:#000;
+}

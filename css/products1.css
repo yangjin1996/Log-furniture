@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+.container {
+	width: 100%;
+}
+.container>img{
+	width:100%;
+}
+.box{
+	width:1200px;
+	margin:0 auto;
+	padding-top:48px;
+	padding-bottom:38px;
+	font-size: 18px;
+}
+.box>span>a:hover{
+	color:#00c905;
+}
+.box>span.on>a{
+	color:#00c905;
+}
+.content{
+	width:1200px;
+	margin:0 auto;
+}
+.content>ul.title{
+	margin:0 auto;
+	overflow: hidden;
+	width:1200px;
+	margin-bottom: 180px;
+}
+.content>ul.title>li{
+	float:left;
+	font-size: 18px;;
+	margin:0 32px;
+	line-height: 30px;
+}
+.content>ul.title>li:hover{
+	border-bottom:2px solid #00c905;
+}
+.content>ul.title>li:hover{
+	color:#00c905;
+	cursor: pointer;
+}
+.content>ul.title>li.on{
+	color:#00c905;
+	margin-left:220px;
+	border-bottom:2px solid #00c905;
+}
+.icon>li{
+	text-align: center;
+	width:380px;
+	height:240px;
+	float:left;
+	position: relative;
+	margin-bottom:150px;
+}
+.icon>li>p{
+	width:380px;
+	height:58px;
+	position: absolute;
+	bottom:0;
+	text-align: center;
+	line-height: 58px;
+	
+	display:none;
+}
+.icon>li>p>a{
+	font-size: 18px;
+	color:#fff;
+}
+.icon>li:hover p{
+	background-color: #00C905;
+	display: block;
+}
+.icon>li:hover{
+	cursor: pointer;
+}
+.icon>li:nth-child(3n+2){
+	margin:0 20px;
+}
+.pageFoot{
+	width:1200px;
+	margin:0 auto;
+	margin-top:100px;
+}
+.pageFoot>ul{
+	overflow: hidden;
+	width:300px;
+	margin:0 auto;
+}
+.pageFoot>ul>li{
+	font-size: 18px;
+	color:#2b2b2b;
+	float:left;
+	width:30px;
+	height:30px;
+	margin:0 15px;
+	text-align: center;
+	line-height: 30px;
+}
+.pageFoot>ul>li:nth-child(2){
+	background-color:#00c905;
+	color:#fff;
+}
+.pageFoot>ul>li:hover{
+	cursor: pointer;
+}

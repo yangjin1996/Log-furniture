@@ -1,0 +1,163 @@
+
+.nav>ul .on{
+	position: relative;
+}
+.nav .on .item{
+	width:80px;
+	height:70px;
+	position: absolute;
+	right:0;
+	bottom:-72px;
+	padding: 8px 0 8px 12px;
+	box-sizing: border-box;
+	box-shadow: 0 10px 10px #d8d8d8;
+	text-align: left;
+	background-color: #fff;
+	opacity: 0;
+}
+.nav .on .item>p{
+	line-height:28px;
+}
+.nav>ul .on:hover .item{
+	transition: opacity 1s linear;
+	opacity: 1;
+}
+.nav .on .item>p:hover{
+	cursor: pointer;
+	color:#7ae16a;
+}
+.box{
+	width:1180px;
+	margin:0 auto;
+	padding-top:48px;
+	font-size: 18px;
+	padding-bottom:38px;
+}
+.box>span>a{
+	font-size: 18px;
+	color:#000;
+}
+.box>span>a:hover{
+	color:#00c905;
+}
+.box>span.on>a{
+	color:#00c905;
+}
+.contact{
+	width:1180px;
+	margin:0 auto;
+}
+.contact>h4{
+	font-size: 24px;
+	color:#000;
+	margin-top: 20px;
+	margin-bottom: 16px;
+	font-weight: 100;
+	text-align: center;
+}
+.contact>h3{
+	font-size: 24px;
+	color:#4f4f4f;
+	font-family: Arial;
+	margin-bottom:60px;
+	font-weight: 100;
+	text-align: center;
+}
+.contact li{
+	color:#4f4f4f;
+	font-size: 18px;
+}
+.content{
+	width:580px;
+	margin:0 auto;
+}
+.content>p:nth-child(1){
+	color:#202020;
+	font-size: 20px;
+}
+.content>p{
+	margin-bottom:44px;
+}
+.content ul{
+	width:449px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 68px;
+}
+.content>form>div>span{
+	color:#4f4f4f;
+	font-size: 18px;
+}
+.content ul>li{
+	line-height:36px;
+	color:#8f8a88;
+}
+.content ul>li:nth-child(3){
+	margin-right:9px;
+}
+.content>.icon span{
+	font-size: 30px;
+	color:#8f8a88;
+	margin-right:26px;
+	cursor: pointer;
+}
+.map{
+	width:1180px;
+	height:400px;
+	margin: 0 auto;
+}
+.map iframe{
+	width:1180px;
+	height:400px;
+}
+.content form{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 75px;
+}
+.content form>div{
+	width:180px;
+	line-height: 34px;
+	border-bottom: 1.5px solid #8f8a88;
+}
+.content form>div>input{
+	width:130px;
+	border:none;
+	outline: none;
+	padding-left:10px;
+}
+#textArea{
+	border-bottom: 1.5px solid #8f8a88;
+	width:580px;
+	margin-bottom: 40px;
+}
+textarea{
+	height:90px;
+	width:580px;
+	border:none;
+	outline: none;
+	resize:none;
+}
+#textArea span{
+	line-height:65px;
+}
+#submitBtn{
+	width:100%;
+	height:76px;
+}
+#submitBtn button{
+	width:120px;
+	height:36px;
+	border:1px solid #2ed700;
+	border-radius: 5px;
+	line-height: 38px;
+	text-align: center;
+	display:block;
+	margin:0 auto;
+	background-color:#fff;
+	font-size: 18px;
+	color:#2d2d2d;
+}
+

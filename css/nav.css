@@ -44,6 +44,9 @@ ul{
 	border-bottom:2px solid #00c905;
 	position: relative;
 }
+.nav>ul>li.on a{
+	color:#00c905;
+}
 .nav .on .item{
 	width:80px;
 	height:70px;
@@ -57,17 +60,17 @@ ul{
 	background-color: #fff;
 	opacity: 0;
 }
-.nav .on .item>p{
+.nav .about-us .item>p{
 	line-height:28px;
 }
-.nav .on .item>p a{
+.nav .about-us .item>p a{
 	font-size: 16px;
 	color:#2f2f2f;
 }
-.nav .on .item>p:hover a{
+.nav .about-us .item>p:hover a{
 	color:#7ae16a
 }
-.nav>ul .on:hover .item{
+.nav>ul .about-us:hover .item{
 	transition: opacity 2s linear;
 	opacity: 1;
 }

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>产品详情</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/index/weblogo.png">
 		<link rel="stylesheet" href="../css/product.css" />
 		<link rel="stylesheet" href="../css/nav.css" />
 		<link rel="stylesheet" href="../font/iconfont.css" />
@@ -40,11 +41,31 @@
 				</div>
 				<div class="productShow">
 					<img src="../images/case/img1.png" alt="" />
-					<ul>
-						<li><img src="../images/case/img2.png" alt="" /></li>
-						<li><img src="../images/case/img3.png" alt="" /></li>
-						<li><img src="../images/case/img4.png" alt="" /></li>
-						<li><img src="../images/case/img5.png" alt="" /></li>
+					<ul class="goods">
+						<li>
+							<img class="img" src="../images/case/img2.png" alt="" />
+							<div class="enlarge">
+								<img class="imgs" src="../images/case/img2.png" alt="" />
+							</div>
+						</li>
+						<li>
+							<img class="img" src="../images/case/img3.png" alt="" />
+							<div class="enlarge">
+								<img class="imgs" src="../images/case/img3.png" alt="" />
+							</div>
+						</li>
+						<li>
+							<img class="img" src="../images/case/img4.png" alt="" />
+							<div class="enlarge">
+								<img class="imgs" src="../images/case/img4.png" alt="" />
+							</div>
+						</li>
+						<li>
+							<img class="img" src="../images/case/img5.png" alt="" />
+							<div class="enlarge">
+								<img class="imgs" src="../images/case/img5.png" alt="" />
+							</div>
+						</li>
 					</ul>
 				</div>
 				<div class="note">
@@ -55,23 +76,41 @@
 			</div>
 		<!-- 底部 -->
 		<div class="end">
-				<div class="endBox">
-					<img src="../images/index/1_03.png" alt="" />
-					<div>
-						<ul>
-							<li>实时动态<span>|</span></li>
-							<li>案例展示<span>|</span></li>
-							<li>关于我们<span>|</span></li>
-							<li>联系我们</li>
-						</ul>
-						<p>© 2018 原木国际家居用品股份有限公司版权所有  新ICP备 00000000号</p>
-					</div>
+			<div class="endBox">
+				<img src="../images/index/1_03.png" alt="" />
+				<div>
 					<ul>
-						<li>欢迎致电</li>
-						<li>0731-84825768</li>
-						<li>131 3521 8088</li>
+						<li><a href="index.html">实时动态</a><span>|</span></li>
+						<li><a href="case.html">案例展示</a><span>|</span></li>
+						<li><a href="aboutUs.html">关于我们</a><span>|</span></li>
+						<li><a href="contact.html">联系我们</a></li>
 					</ul>
+					<p>© 2018 原木国际家居用品股份有限公司版权所有  新ICP备 00000000号</p>
 				</div>
+				<ul>
+					<li>欢迎致电</li>
+					<li>0731-84825768</li>
+					<li>131 3521 8088</li>
+				</ul>
 			</div>
+		</div>
 	</body>
+	<script type="text/javascript">
+		var enlarge = document.querySelectorAll('.enlarge');
+		var img = document.querySelectorAll('.img');
+		var imgs = document.querySelectorAll('.imgs');
+		for(let i = 0;i < img.length;i++){
+			img[i].onmouseenter = function(e){
+				enlarge[i].style.display = 'block';
+			}
+			img[i].onmousemove = function(e){
+				enlarge[i].style.display = 'block';
+				imgs[i].style.left = -e.offsetX*2 + 'px';
+				imgs[i].style.top = -e.offsetY*2 + 'px';
+			}
+			img[i].onmouseleave = function(e){
+				enlarge[i].style.display = 'none';
+			}
+		}
+	</script>
 </html>

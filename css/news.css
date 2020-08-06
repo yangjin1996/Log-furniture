@@ -81,14 +81,16 @@ a{
 	box-sizing: border-box;
 	opacity: 0;
 }
-.contentNews>ul.text>li>div>p{
+.contentNews>.text>li>div>p{
 	float:left;
 	margin-left:30px;
 	margin-top:10px;
 	font-size: 18px;
 	line-height:30px;
-	color:#777777;
 	width:600px;
+}
+.contentNews>ul.text>li>div>p a{
+	color:#777777;
 }
 .contentNews>ul.text>li{
 	height:255px;

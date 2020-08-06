@@ -71,16 +71,21 @@ a{
 	bottom:0;
 	text-align: center;
 	line-height: 58px;
-	
-	display:none;
+	opacity: 0;
 }
 .icon>li>p>a{
 	font-size: 18px;
 	color:#fff;
 }
+.icon>li p{
+	transition: all .7s;
+}
 .icon>li:hover p{
 	background-color: #00C905;
-	display: block;
+	opacity: 1;
+}
+.icon>li{
+	transition: all .7s;
 }
 .icon>li:hover{
 	cursor: pointer;

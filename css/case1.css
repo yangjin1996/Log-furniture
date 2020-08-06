@@ -33,7 +33,7 @@ a{
 }
 .box>ul>li{
 	width:290px;
-	height:445px;
+	height:410px;
 	padding-top:10px;
 	padding-left: 10px;
 	margin-bottom: 20px;
@@ -50,11 +50,10 @@ a{
 }
 .box>ul>li>div{
 	margin-top:10px;
-	display:none;
+	opacity: 0;
 	overflow: hidden;
 }
 .box>ul>li>h5{
-	margin-top:40px;
 	font-size: 14px;
 	color:#6d6e6d;
 	font-weight: 100;
@@ -72,18 +71,24 @@ a{
 	height:40px;
 	text-align: center;
 	margin-left:6px;
-	margin-bottom:30px;
+	margin-bottom:10px;
 	box-sizing: border-box;
 }
 .box>ul>li>div>p:hover{
 	border: 1px solid #00C905;
 }
+.box>ul>li{
+	transition:all .5s;
+}
 .box>ul>li:hover{
 	border: 2px solid #b6b6b6;
 	box-shadow:0 15px 15px -5px lightgray;
 }
+.box>ul>li div{
+	transition:all .5s;
+}
 .box>ul>li:hover div{
-	display:block;
+	opacity: 1;
 }
 .box>ul>li:hover h5{
 	margin-top:0;

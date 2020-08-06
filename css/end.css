@@ -27,6 +27,9 @@
 .endBox>div>ul>li{
 	float:left;
 }
+.endBox a{
+	color:#333;
+}
 .endBox>div>ul>li>span{
 	margin:0 50px;
 }

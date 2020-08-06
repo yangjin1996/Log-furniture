@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>首页</title>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/index/weblogo.png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css" />
 		<link rel="stylesheet" href="../css/index.css" />
 		<link rel="stylesheet" href="../css/nav.css" />
 		<link rel="stylesheet" href="../font/iconfont.css" />
@@ -16,7 +18,7 @@
 				<a href=""><img src="../images/index/1_03.png" alt=""></a>
 				<ul>
 					<li class="on">
-						<a href="">首页</a>
+						<a href="index.html">首页</a>
 						<div class="item">
 							<p><a href="aboutUs.html">关于我们</a></p>
 							<p><a href="contact.html">联系</a></p>
@@ -30,17 +32,23 @@
 			</div>
 		</div>
 		<!-- 轮播图 -->
-		<div class="banner-bg">
-			<div class="banner">
-				<ul>
-					<li class="on"><a href=""><img src="../images/index/banner1_02.png" alt=""></a></li>
-					<li><a href=""><img src="../images/index/banner2.png" alt=""></a></li>
-					<li><a href=""><img src="../images/index/banner1.png" alt=""></a></li>
-				</ul>
-				<i class="number"><span>1</span>/ 3</i>
-			</div>
-			<button class="left1"><span class="iconfont icon-arrow-right-copy-copy"></span></button>
-			<button  class="right1"><span class="iconfont icon-jiantou2"></span></button>
+		<div class="swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide" data-swiper-autoplay="2500">
+					<img src="../images/index/banner1_02.png" alt="">
+				</li>
+				<li class="swiper-slide" data-swiper-autoplay="2500">
+					<img src="../images/index/banner2.png" alt="">
+				</li>
+				<li class="swiper-slide" data-swiper-autoplay="2500">
+					<img src="../images/index/banner1.png" alt="">
+				</li>
+			</ul>
+			<!-- 如果需要分页器 -->
+		    <div class="swiper-pagination"></div>
+		    <!-- 如果需要导航按钮 -->
+		    <!--<div class="swiper-button-prev"></div>
+		    <div class="swiper-button-next"></div>-->
 		</div>
 		<!-- 产品展示 -->
 		<div class="body">
@@ -48,14 +56,14 @@
 				<h3>产品展示</h3>
 				<h4>PRODUCTS</h4>
 				<ul class="title">
-					<li><a href="">首页</a></li>
-					<li><a href="">沙发</a></li>
-					<li><a href="">桌子</a></li>
-					<li><a href="">椅子</a></li>
-					<li><a href="">床</a></li>
-					<li><a href="">柜子</a></li>
-					<li><a href="">饰品</a></li>
-					<li><a href="">其他</a></li>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="javascript:">沙发</a></li>
+					<li><a href="javascript:">桌子</a></li>
+					<li><a href="javascript:">椅子</a></li>
+					<li><a href="javascript:">床</a></li>
+					<li><a href="javascript:">柜子</a></li>
+					<li><a href="javascript:">饰品</a></li>
+					<li><a href="javascript:">其他</a></li>
 				</ul>
 			</div>
 			<div class="fanbyn">
@@ -66,7 +74,7 @@
 					</li>
 					<li class="right-top">
 						<h4>FANBYN 法恩布<br><span>曲线型扶手和靠背增加坐感舒适度</span></h4>
-						<p><a href="">查看详情</a></p>
+						<p><a href="product1.html">查看详情</a></p>
 					</li>
 					<li class="left-bottpm">
 						<img src="../images/index/2_06.png" alt="" />
@@ -81,7 +89,7 @@
 				</ul>
 			</div>
 			<div class="more">
-				MORE<a href="product1.html"><span class="iconfont icon-arrow-right-copy-copy"></span></a>
+				MORE<a href="case1.html"><span class="iconfont icon-arrow-right-copy-copy"></span></a>
 			</div>
 		</div>
 		<!-- 案例中心 -->
@@ -117,7 +125,7 @@
 			</ul>
 		</div>
 		<div class="more">
-			MORE<a href=""><span class="iconfont icon-arrow-right-copy-copy"></span></a>
+			MORE<a href="case.html"><span class="iconfont icon-arrow-right-copy-copy"></span></a>
 		</div>
 		<!-- 关于我们 -->
 		<div class="aboutUs">
@@ -126,7 +134,7 @@
 			<div class="box2">
 				<p>关于我们<br><span>ABOUT US</span></p>
 				<p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们为200多名国际与本地客户的300余个产品提供了创新易用的设计方案，有效提升了产品体验和客户品牌价值，并引领市场不断树立新的体验标杆。我们整合商业思考美学价值及技术实现，以销售家居用品及室内装饰品为主的品牌 ...
-					<span>MORE</span>
+					<span><a href="aboutUs.html">MORE</a></span>
 				</p>
 				<div></div>
 			</div>
@@ -172,7 +180,7 @@
 			</ul>
 		</div>
 		<div class="more">
-			MORE<a href=""><span class="iconfont icon-arrow-right-copy-copy"></span></a>
+			MORE<a href="news.html"><span class="iconfont icon-arrow-right-copy-copy"></span></a>
 		</div>
 		<!-- 设计师 -->
 		<div class="disiner">
@@ -195,7 +203,7 @@
 						<p>杨明洁2005年创办YANG DESIGN（杨明洁设计顾问机构）博物馆迄今为全球领先的产品策略与创新设计顾问机构。在设计界的坚持与卓越表现，杨明洁成为了国际品牌与包括绿色和平组织、壹基金在内的文化公益机构的合作伙伴。 <span>MORE</span></p>
 						<div></div>
 					</li>
-					<li><a class="line1" href=""></a><a class="line2" href=""></a></li>
+					<!--<li><a class="line1" href=""></a><a class="line2" href=""></a></li>-->
 				</ul>
 			</div>
 		</div>
@@ -205,10 +213,10 @@
 				<img src="../images/index/1_03.png" alt="" />
 				<div>
 					<ul>
-						<li>实时动态<span>|</span></li>
-						<li>案例展示<span>|</span></li>
-						<li>关于我们<span>|</span></li>
-						<li>联系我们</li>
+						<li><a href="index.html">实时动态</a><span>|</span></li>
+						<li><a href="case.html">案例展示</a><span>|</span></li>
+						<li><a href="aboutUs.html">关于我们</a><span>|</span></li>
+						<li><a href="contact.html">联系我们</a></li>
 					</ul>
 					<p>© 2018 原木国际家居用品股份有限公司版权所有  新ICP备 00000000号</p>
 				</div>
@@ -220,4 +228,22 @@
 			</div>
 		</div>
 	</body>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+	<script type="text/javascript">
+		 var mySwiper = new Swiper ('.swiper-container', {
+		    loop: true, // 循环模式选项
+		    speed:1000,
+		    autoplay:true,
+		    effect:'cube',
+		    // 如果需要分页器
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		  })  
+	</script>
 </html>
